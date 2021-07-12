@@ -1,0 +1,19 @@
+.custom-btn {
+  width: 100%;
+  border: none;
+  padding: .8125rem 1.125rem;
+  border-radius: .25rem;
+  text-align: center;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  &--active {
+    background: $primary;
+  }
+}

@@ -1,0 +1,28 @@
+@import "_variables.scss";
+
+//  Globals
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+}
+html, * {
+  font-family: "Open Sans", sans-serif;
+}
+
+//  Components
+@import "components/MainNav";
+@import "components/ProfileLogin";
+@import "components/MainReader";
+
+//  Layouts
+@import "layouts/MainLayout";
+@import "layouts/ReaderLayout";
+
+//  Pages
+@import "pages/Profile";
+@import "pages/Reader";
+
+
+//  Forms
+@import "components/forms/CustomInput";
+@import "components/forms/CustomButton";

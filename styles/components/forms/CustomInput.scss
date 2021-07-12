@@ -1,0 +1,35 @@
+.custom-input {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+
+  color: $formTextColor;
+
+  &__label {
+    font-weight: 700;
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+  &__error {
+    color: $danger;
+    margin-top: 0.5rem;
+    font-size: .75rem;
+  }
+  &__input {
+    background: $fieldBg;
+    border: .5px solid #13132b;
+    border-radius: .25rem;
+    padding: .6875rem 1rem;
+    font-size: .9375rem;
+    outline: none;
+    color: #fff;
+    font-weight: 600;
+    &::placeholder {
+      color: $formTextColor;
+      font-weight: 400;
+    }
+    &:focus-within {
+      background: $activeFieldBg;
+    }
+  }
+}

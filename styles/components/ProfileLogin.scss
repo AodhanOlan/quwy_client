@@ -1,0 +1,39 @@
+.login {
+  display: flex;
+  flex-flow: column;
+
+  width: 100%;
+  border-radius: 4px;
+  background: $mainColor;
+  padding: 28px 16px;
+
+  &__header {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+  &__field {
+    margin-bottom: 2rem;
+  }
+  &__btn {
+    font-size: 1rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.25rem;
+  }
+
+}
+.login-header {
+  color: #fff;
+
+  &__title {
+    font-size: 36px;
+    margin-bottom: 12px;
+  }
+
+  &__subtitle {
+    font-size: 15px;
+    margin-bottom: 32px;
+  }
+}

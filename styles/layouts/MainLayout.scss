@@ -1,0 +1,21 @@
+.page {
+
+  scroll-behavior: smooth;
+  background: $mainBgColor;
+
+  &__content {
+    padding: 8px;
+
+    overflow-x: auto;
+    height: calc(100vh - #{$navH + 16});
+  }
+}
+.box {
+  display: grid;
+  grid-gap: 8px;
+  &__item {
+    height: 300px;
+    background: #fff;
+  }
+
+}
