@@ -1,24 +1,60 @@
 .reader {
     height: 100%;
 }
-.slider {
-    height: 100%;
-    width: 100%;
+.steps {
+    background: lightgray;
     display: flex;
-    &__list {
-        display: flex;
-        position: relative;
-        height: inherit;
-    }
     &__item {
-        display: flex;
-        height: 100vh;
+        width: 100%;
+        border-right: 1px solid #000;
+        &:last-child {
+            border-right: none;
+        }
+        &--active {
+            background: red;
+        }
+    }
+}
+.slider {
+    max-height: 100vh;
+    max-width: 100vw;
+    height: 100vh;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+    touch-action: auto!important;
+    &__item {
+        position: relative;
         width: 100vw;
-        overflow-y: scroll;
-        overflow-x: hidden;
+        height: 600px;
     }
     &__image {
-        width: 100%;
+        width: 100vw;
         height: fit-content;
+    }
+    &__dots {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        display: flex!important;
+        width: 100%;
+        & li {
+            width: 100%;
+            // border-right: 1px solid ;
+            list-style: none;
+            height: 3px;
+            &:last-child {
+                border-right: none;
+            }
+            &.slick-active {
+                background: rgb(255,255,255);
+                background: linear-gradient(0deg, rgba(161,110,255,1)  0%, rgba(255,255,255,0) 100%);
+            }
+        }
+        & button {
+            background: transparent;
+            border: none;
+            color: transparent;
+        }
     }
 }

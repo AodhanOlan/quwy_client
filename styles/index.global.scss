@@ -26,3 +26,7 @@ html, * {
 //  Forms
 @import "components/forms/CustomInput";
 @import "components/forms/CustomButton";
+
+//  Slick
+@import "~slick-carousel/slick/slick";
+@import "~slick-carousel/slick/slick-theme";
