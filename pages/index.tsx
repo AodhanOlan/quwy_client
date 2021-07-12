@@ -1,19 +1,21 @@
+import Link from 'next/link';
 import * as React from 'react';
 import MainLayout from "../layouts/MainLayout";
 
 const Index: React.FC = () => {
-  const arr = new Array(10).fill(1).map((e, i) => i);
+  const styles = {
+    display: "flex",
+    height: "50px",
+    borderRadius: "8px",
+    background: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
+    textDecoration: "none",
+  }
   return (
-      <MainLayout>
-        <div className="box">
-          {
-            arr.map((el) => (
-              <div key={el} className="box__item">Box</div>
-            ))
-          }
-        </div>
-
-      </MainLayout>
+    <MainLayout>
+      <Link href="/reader"><a style={styles}>Reader</a></Link>
+    </MainLayout>
   );
 };
 export default Index
