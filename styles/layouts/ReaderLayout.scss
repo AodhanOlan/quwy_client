@@ -1,4 +1,26 @@
+$readerButtonSize: 40px;
+
 .reader-wrapper {
     background: $mainColor;
     width: 100vw;
+}
+.reader-header {
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    color: #fff;
+    padding: $defaultPaddingY $defaultPaddingX;
+}
+.header-main {
+    display: grid;
+    grid-template-columns: $readerButtonSize auto;
+    align-items: center;
+    &__button {
+        width: $readerButtonSize;
+        height: $readerButtonSize;
+        border: none;
+        border-radius: 50%;
+    }
+    &__title {
+        transform: translateX(-#{$readerButtonSize / 2});
+        justify-self: center;
+    }
 }

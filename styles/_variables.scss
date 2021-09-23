@@ -1,8 +1,16 @@
-$mainColor: #323259;
-$mainBgColor: #1b1b38;
+$mainColor: rgb(68, 68, 68);
+$mainBgColor: rgb(23, 23, 23);
+$accentColor: rgb(218, 0, 55);
+$lightColor: rgb(237, 237, 237);
 $navH: 60px;
 $iconColor: #fff;
 $activeLinkColor: #a16eff;
+
+
+
+// Padding
+$defaultPaddingX: 1rem;
+$defaultPaddingY: 2rem;
 
 
 //  Forms

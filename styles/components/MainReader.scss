@@ -25,12 +25,9 @@
     touch-action: auto!important;
     &__item {
         position: relative;
-        width: 100vw;
-        height: 600px;
     }
     &__image {
         width: 100vw;
-        height: fit-content;
     }
     &__dots {
         position: fixed;

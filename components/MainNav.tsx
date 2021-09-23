@@ -1,16 +1,16 @@
 import * as React from 'react';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faBookOpen, faRssSquare, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faSearch, faBookmark, faBell } from '@fortawesome/free-solid-svg-icons'
 import {useRouter} from "next/router";
 
 const MainNav: React.FC = () => {
   const router = useRouter();
   const links: Array<MainLink> = [
     { img: faHome, href: "/" },
-    { img: faBookOpen, href: "/list" },
-    { img: faRssSquare, href: "/overview" },
-    { img: faUser, href: "/profile" },
+    { img: faSearch, href: "/find" },
+    { img: faBookmark, href: "/bookmarks" },
+    { img: faBell, href: "/notifications" },
   ];
   return (
     <nav className="nav">
